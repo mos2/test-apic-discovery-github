@@ -4,7 +4,7 @@ on: [pull_request, workflow_dispatch, push]
 
 env:
   API_HOST: d-h01.apiconnect.dev.automation.ibm.com
-  PROVIDER_ORG: ruairi_h01_b
+  PROVIDER_ORG: michaelosullivan
   API_FILE: gmail-api.json
 
 jobs:
