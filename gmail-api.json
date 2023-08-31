@@ -2,7 +2,7 @@
   "openapi": "3.0.0",
   "info": {
       "title": "gmail",
-      "description": "Optional multiline or single-liner description in [CommonMark](http://commonmark.org/help/) or HTML. I like to promote it, promote it.",
+      "description": "Optional multiline or single-liner description in [CommonMark](http://commonmark.org/help/) or HTML. I like to promote it, promote it. Woop.",
       "version": "3.1.0"
   },
   "servers": [
