@@ -6,6 +6,7 @@ env:
   API_HOST: d-j02.apiconnect.dev.automation.ibm.com
   PROVIDER_ORG: michael
   API_FILES: gmail-api.json
+  API_FILE: gmail-api.json
 
 jobs:
   check_apifiles_job:
