@@ -6,7 +6,6 @@ env:
   API_HOST: d-j02.apiconnect.dev.automation.ibm.com
   PROVIDER_ORG: michael
   API_FILES: gmail-api.json
-  API_FILE: gmail-api.json
 
 jobs:
   check_apifiles_job:
@@ -38,11 +37,10 @@ jobs:
     - uses: ruairi-hayes/apic-discovery-action@main
       id: discover-apis
       with:
-        milliseconds: 5000
-        api_host: ${{ env.API_HOST }}
-        provider_org: ${{ env.PROVIDER_ORG }}
-        api_key: ${{ secrets.apicApikey }}
-        api_file: ${{ env.API_FILE }}
+        api-host: ${{ env.API_HOST }}
+        provider-org: ${{ env.PROVIDER_ORG }}
+        api-key: ${{ secrets.apicApikey }}
+        api-files: ${{ env.API_FILES }}
         resync_check: ${{ needs.check_apifiles_job.outputs.action_changed && true || false }}
     - name: Display the action-result
       run: |
