@@ -6,6 +6,7 @@ env:
   API_HOST: d-j02.apiconnect.dev.automation.ibm.com
   PROVIDER_ORG: michael
   API_FILES: gmail-api.json
+  API_FOLDERS: APIFolder
 
 jobs:
   check_changes_job:
@@ -46,6 +47,7 @@ jobs:
         provider-org: ${{ env.PROVIDER_ORG }}
         api-key: ${{ secrets.apicApikey }}
         api-files: ${{ env.API_FILES }}
+        api-folders: ${{ env.API_FOLDERS }}
         resync_check: ${{ needs.check_changes_job.outputs.action_changed && true || false }}
     - name: Display the action-result
       run: |
