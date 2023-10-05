@@ -46,7 +46,7 @@ jobs:
         provider-org: ${{ env.PROVIDER_ORG }}
         api-key: ${{ secrets.apicApikey }}
         api-files: ${{ env.API_FILES }}
-        resync-check: ${{ needs.check_changes_job.outputs.action_changed && true || false }}
+        resync_check: ${{ needs.check_changes_job.outputs.action_changed && true || false }}
     - name: Display the action-result
       run: |
         echo "Result of the action: ${{ steps.discover-apis.outputs.action-result }}"
