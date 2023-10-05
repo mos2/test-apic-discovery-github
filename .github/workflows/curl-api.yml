@@ -2,10 +2,10 @@ name: Script to curl apic
 
 on: [pull_request, workflow_dispatch]
 env:
-  provider-org: 'ruairi_h01_b'
+  provider-org: 'michael'
   client-id: 599b7aef-8841-4ee2-88a0-84d49c4d6ff2
   client-secret: 0ea28423-e73b-47d4-b40e-ddb45c48bb0c
-  api-host: platform-api.d-h01.apiconnect.dev.automation.ibm.com
+  api-host: platform-api.d-j02.apiconnect.dev.automation.ibm.com
 
 jobs:
   run-updater:
