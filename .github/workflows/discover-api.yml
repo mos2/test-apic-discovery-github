@@ -45,10 +45,7 @@ jobs:
         api-host: ${{ env.API_HOST }}
         provider-org: ${{ env.PROVIDER_ORG }}
         api-key: ${{ secrets.apicApikey }}
-        if: env.API_FILES
         api-files: ${{ env.API_FILES }}
-        else if: env.API_FOLDERS
-        api-folders: ${{ env.API_FOLDERS }}
         resync-check: ${{ needs.check_changes_job.outputs.action_changed && true || false }}
     - name: Display the action-result
       run: |
