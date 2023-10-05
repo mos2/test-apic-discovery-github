@@ -2,7 +2,7 @@
   "openapi": "3.0.0",
   "info": {
       "title": "gmail",
-      "description": "Optional multiline or single-liner description in [CommonMark](http://commonmark.org/help/) or HTML. I like to promote it, promote it. Woop. Woop. Woop. Woop again. Pull up. Pull up. Don't sink. Don't sink. Too low terrain.",
+      "description": "Optional multiline or single-liner description in [CommonMark](http://commonmark.org/help/) or HTML. I like to promote it, promote it. Woop. Woop. Woop. Woop again. Pull up. Pull up. Don't sink. Don't sink. Too low terrain. Too low terrain.",
       "version": "3.1.0"
   },
   "servers": [
